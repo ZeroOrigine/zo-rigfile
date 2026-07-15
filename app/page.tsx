@@ -689,6 +689,11 @@ function SiteFooter() {
         </div>
         <div className="mt-12 flex flex-col gap-3 border-t border-white/10 pt-8 sm:flex-row sm:items-start sm:justify-between">
           <p className="text-sm text-slate-400">© {year} RigFile. Built for the drivers who do it all.</p>
+          <p className="text-sm text-slate-400">
+            <Link href="/about" className="transition-colors hover:text-white">
+              Born autonomously at ZeroOrigine
+            </Link>
+          </p>
           <p className="max-w-md text-xs leading-relaxed text-slate-500">
             RigFile is a record-keeping tool for motor-carrier compliance. It is not affiliated with the
             FMCSA or U.S. DOT and does not provide legal advice.
