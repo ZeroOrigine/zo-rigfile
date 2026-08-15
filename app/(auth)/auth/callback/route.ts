@@ -1,5 +1,5 @@
 // CANONICAL — GET /auth/callback
-// OAuth (Google / GitHub) return leg: exchanges the PKCE code for a session
+// OAuth (Google) return leg: exchanges the PKCE code for a session
 // and drops the driver on their dashboard. The database trigger
 // rigfile_handle_new_user provisions the profile + free subscription on first
 // OAuth sign-in, so there is zero extra onboarding.
