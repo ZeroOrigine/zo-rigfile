@@ -3,6 +3,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
+import ZoAuthFragmentBridge from '@/components/ZoAuthFragmentBridge'
 
 const bodyFont = Inter({
   subsets: ['latin'],
@@ -39,7 +40,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${bodyFont.variable} ${displayFont.variable}`}>
-      <body className="min-h-screen antialiased">{children}</body>
+      <body className="min-h-screen antialiased">
+        <ZoAuthFragmentBridge />{children}</body>
     </html>
   )
 }
